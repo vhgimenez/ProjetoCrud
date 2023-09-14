@@ -5,6 +5,7 @@ const app = express();
 
 // definindo o template engine
 app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
 
 // definindo os arquivos públicos
 app.use(express.static(path.join(__dirname, 'public')));
