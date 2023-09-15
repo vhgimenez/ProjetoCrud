@@ -12,21 +12,25 @@
     <% } %>
 
     <form action="/register/add" method="post">
-        <div>
-        <label>Nome</label>
-        <input type="text" name="name" placeholder="Digite seu nome">
+        <div class="menu">
+            <div class="campo">
+            <h3>Nome</h3>
+            <input type="text" name="name">
+            </div>
+            <div class="campo">
+            <h3>Idade</h3>
+            <input type="text" name="age">
+            </div>
         </div>
-        <div>
-        <label>Idade</label>
-        <input type="text" name="age" placeholder="Digite sua idade">
-        </div>
-        <div>
-        <label>E-mail</label>
-        <input type="text" name="email" placeholder="Digite seu e-mail">
-        </div>
-        <div>
-        <label>Senha</label>
-        <input type="text" name="password" placeholder="Digite sua senha">
+        <div class="menu">
+            <div class="campo">
+            <h3>E-mail</h3>
+            <input type="text" name="email" placeholder="exemplo@email.com">
+            </div>
+            <div class="campo">
+            <h3>Senha</h3>
+            <input type="password" name="password">
+            </div>
         </div>
         <button type="submit">Cadastrar</button>
     </form>
