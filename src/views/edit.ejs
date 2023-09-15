@@ -11,24 +11,20 @@
         <%= message %>
     <% } %>
 
-    <form action="/register/add" method="post">
+    <form action="/edit/<%= user._id %>" method="post">
         <div>
         <label>Nome</label>
-        <input type="text" name="name" placeholder="Digite seu nome">
+        <input type="text" name="name" placeholder="Digite seu nome" value="<%= user.name %>">
         </div>
         <div>
         <label>Idade</label>
-        <input type="text" name="age" placeholder="Digite sua idade">
+        <input type="text" name="age" placeholder="Digite sua idade" value="<%= user.age %>">
         </div>
         <div>
         <label>E-mail</label>
-        <input type="text" name="email" placeholder="Digite seu e-mail">
+        <input type="text" name="email" placeholder="Digite seu e-mail" value="<%= user.email %>">
         </div>
-        <div>
-        <label>Senha</label>
-        <input type="text" name="password" placeholder="Digite sua senha">
-        </div>
-        <button type="submit">Cadastrar</button>
+        <button type="submit">Editar</button>
     </form>
 
     <%- include("partials/foot.ejs") %>

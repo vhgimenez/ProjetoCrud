@@ -11,4 +11,7 @@ router.post('/register/add', CustomersController.add);
 
 router.get('/list', CustomersController.listUser);
 
+router.get('/edit', CustomersController.formEdit);
+router.post('/edit/:id', CustomersController.edit);
+
 module.exports = router
