@@ -14,4 +14,6 @@ router.get('/list', CustomersController.listUser);
 router.get('/edit', CustomersController.formEdit);
 router.post('/edit/:id', CustomersController.edit);
 
+router.get('/remove/:id', CustomersController.remove);
+
 module.exports = router
