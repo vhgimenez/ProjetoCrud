@@ -43,7 +43,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #e4b17d;
+    color: #e6b093;
 }
 
 hr {
@@ -95,4 +95,45 @@ button {
 
 button:hover {
     width: 25rem;
+}
+
+.listagem li {
+    padding:  1rem;
+    margin: 2rem auto 0;
+    list-style: none;
+    background-color: #e06f72;
+    width: 30rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.foto img {
+    mix-blend-mode: multiply;
+    width: 4rem;
+}
+
+.dados {
+    text-align: left;
+}
+
+.dados span {
+    font-weight: 600;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icons img {
+    width: 2rem;
 }

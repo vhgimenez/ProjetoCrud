@@ -6,11 +6,26 @@
     <h1><%= title %></h1>
 
     <%- include("partials/navbar.ejs") %>
-
+    <div class="listagem">
     <% users.forEach((user) => { %>
-        <li> <%= user.name %> <%= user.email %> Idade: <%= user.age %> - <a href="/edit?id=<%= user._id %>">[Editar]</a> - <a href="/remove/<%= user._id %>">[Remover]</a></li>
+        <li>
+            <section>
+                <div class="foto">
+                    <img src="user.png">
+                </div>
+                <div class="dados">
+                    <span>Nome:</span> <%= user.name %> 
+                    <span>Idade:</span> <%= user.age %><br> 
+                    <span>Email:</span> <%= user.email %> 
+                </div>
+            </section>
+            <div class="icons">
+                <a href="/edit?id=<%= user._id %>"><img src="/edit.png"></a> 
+                <a href="/remove/<%= user._id %>"><img src="/remove.png"></a>
+            </div>
+        </li>
     <% }); %>
-
+    </div>
     <%- include("partials/foot.ejs") %>
 </body>
 </html>
