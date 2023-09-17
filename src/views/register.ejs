@@ -7,10 +7,6 @@
 
     <%- include("partials/navbar.ejs") %>
 
-    <% if(typeof message !== "undefined") { %>
-        <%= message %>
-    <% } %>
-
     <form action="/register/add" method="post">
         <div class="menu">
             <div class="campo">
@@ -32,6 +28,9 @@
             <input type="password" name="password" autocomplete="off">
             </div>
         </div>
+        <% if(typeof message !== "undefined") { %>
+            <p><%= message %></p>
+        <% } %>
         <button type="submit">Cadastrar</button>
     </form>
 

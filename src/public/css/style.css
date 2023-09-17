@@ -79,6 +79,11 @@ hr {
     font-size: 1.2rem;
 }
 
+#emailedit {
+    width: 39.5rem;
+    text-align: left;
+}
+
 button {
     margin-top: 2rem;
     padding: .6rem;

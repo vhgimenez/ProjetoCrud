@@ -12,17 +12,21 @@
     <% } %>
 
     <form action="/edit/<%= user._id %>" method="post">
-        <div>
-        <label>Nome</label>
-        <input type="text" name="name" placeholder="Digite seu nome" value="<%= user.name %>">
+        <div class="menu">
+            <div class="campo">
+            <label>Nome</label>
+            <input type="text" name="name" placeholder="Digite seu nome" value="<%= user.name %>">
+            </div>
+            <div class="campo">
+            <label>Idade</label>
+            <input type="text" name="age" placeholder="Digite sua idade" value="<%= user.age %>">
+            </div>
         </div>
-        <div>
-        <label>Idade</label>
-        <input type="text" name="age" placeholder="Digite sua idade" value="<%= user.age %>">
-        </div>
-        <div>
-        <label>E-mail</label>
-        <input type="text" name="email" placeholder="Digite seu e-mail" value="<%= user.email %>">
+        <div class="menu">
+            <div class="campo" id="emailedit">
+            <label>E-mail</label>
+            <input type="text" name="email" placeholder="Digite seu e-mail" value="<%= user.email %>">
+            </div>
         </div>
         <button type="submit">Editar</button>
     </form>
